@@ -74,7 +74,7 @@ report_plt <- function(N, X, confidence = 0.9) {
     labs(fill = NULL, x = NULL, y = "tasters",
          title = glue::glue("Tetrad test results for {N} tasters"),
          subtitle = glue::glue("with {X} correct responses and {round(100 * confidence, 0)}% confidence")) + 
-    theme_linedraw(base_size = 14) +
+    theme_linedraw(base_size = 20) +
     theme(legend.position = "bottom",
           axis.text.x = element_blank(),
           axis.ticks.length.x = unit(0, "cm"))
