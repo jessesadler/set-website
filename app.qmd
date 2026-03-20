@@ -14,6 +14,8 @@ filters:
 
 Change the values for the number of participants and the number who noticed a difference and then click on the `Run test` button.
 
+It may take some time for the app to load depending upon your connection speed.
+
 ```{shinylive-r}
 #| standalone: true
 #| viewerHeight: 800
