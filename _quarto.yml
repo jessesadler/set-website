@@ -1,0 +1,30 @@
+project:
+  type: website
+  resources:
+  - shinylive-sw.js
+
+website:
+  title: "Sensory Extension Toolkit"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: tetrad.qmd
+        text: "Recommended test procedure"
+      - href: analysis.qmd
+        text: "Data analysis"
+      - href: app.qmd
+        text: "Try it out!"
+      - href: about.qmd
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+    css: styles.css
+    toc: true
+
+execute:
+  freeze: auto
+

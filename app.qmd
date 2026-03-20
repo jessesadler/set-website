@@ -1,0 +1,123 @@
+---
+title: "Try it out"
+format:
+  html:
+    grid: 
+      body-width: 1350px
+      sidebar-width: 200px
+      margin-width: 200px
+    resources: 
+      - shinylive-sw.js
+filters:
+  - shinylive
+---
+
+Change the values for the number of participants and the number who noticed a difference and then click on the `Run test` button.
+
+```{shinylive-r}
+#| standalone: true
+#| viewerHeight: 800
+
+library(shiny)
+library(bslib)
+library(ggplot2)
+library(glue)
+library(munsell)
+
+### Setup code ###
+
+lims_fun <- function(N, X) {
+  stats::qbeta(p = c(0.05, 0.95), shape1 = 6 + X, shape2 = 6 + N - X)
+}
+
+report_txt <- function(N, X, confidence = 0.9) {
+  lims <- lims_fun(N, X)
+  glue(
+    "Based on your prior certainty about how different your samples were, ", 
+    "and the fact that {X}/{N} of your tasters correctly completed the ",
+    "discrimination test, we estimate that in approximately ", 
+    "{round(confidence * 100, 0)}% of cases, a minimum of ", 
+    "{round(100*lims[1], 0)}% and a maximum of {round(100*lims[2], 0)}% ",
+    "of consumers would notice the difference between these two sample wines."
+  )
+}
+
+report_plt <- function(N, X, confidence = 0.9) {
+  lims <- lims_fun(N, X)
+  
+  data.frame(
+    difference = c(rep("Noticed", 3), rep("Did not notice", 3)),
+    name = rep(
+      factor(c("observed", "max", "min"),
+             levels = c("observed", "min", "max")),
+      2),
+    value = c(X, round(lims[2] * 100), round(lims[1] * 100),
+              N - X, round((1 - lims[2]) * 100), round((1 - lims[1]) * 100)
+              )
+  ) |>
+    
+    # and plot
+    
+    ggplot(aes(x = name, y = value, fill = difference)) + 
+    geom_col(position = "dodge") + 
+    facet_wrap(~name, scales = "free_x",
+               labeller = labeller(
+                 name = c(observed = "Observed",
+                          min = "of 100 consumers,\nminimum noticing a difference",
+                          max = "of 100 consumers,\nmaximum noticing a difference")
+               )) + 
+    
+    # clean it up
+    
+    scale_fill_manual(values = c("darkgreen", "goldenrod")) + 
+    scale_y_continuous(expand = expansion(mult = c(0, 0.05))) + 
+    labs(fill = NULL, x = NULL, y = "tasters",
+         title = glue::glue("Tetrad test results for {N} tasters"),
+         subtitle = glue::glue("with {X} correct responses and {round(100 * confidence, 0)}% confidence")) + 
+    theme_linedraw(base_size = 14) +
+    theme(legend.position = "bottom",
+          axis.text.x = element_blank(),
+          axis.ticks.length.x = unit(0, "cm"))
+}
+
+### UI code ###
+
+sidebar_selectors <- sidebar(
+  numericInput("N", 
+               label = "Number of participants",
+               value = 25, min = 0),
+  numericInput("X",
+               label = "Number of participants who thought they were different",
+               value = 15, min = 0),
+  actionButton("simulate", "Run test")
+)
+
+# Define UI for application that draws a histogram
+ui <- page_navbar(
+  sidebar = sidebar_selectors,
+  nav_panel("Plot the outcome",
+            textOutput("reportText"),
+            plotOutput("reportPlot"))
+)
+
+### Server code ###
+
+# Define server logic
+server <- function(input, output) {
+  
+  N <- eventReactive(input$simulate, input$N, ignoreNULL = FALSE)
+  X <- eventReactive(input$simulate, input$X, ignoreNULL = FALSE)
+  
+  output$reportText <- renderText(
+    report_txt(N(), X())
+  )
+  
+  output$reportPlot <- renderPlot(
+    report_plt(N(), X()),
+    height = 600
+  )
+}
+
+# Run the application 
+shinyApp(ui = ui, server = server)
+```
