@@ -28,24 +28,52 @@ library(munsell)
 
 ### Setup code ###
 
-lims_fun <- function(N, X) {
-  stats::qbeta(p = c(0.05, 0.95), shape1 = 6 + X, shape2 = 6 + N - X)
+b_ratio <-  c(1/2, 1/2, 1/2, 2, 2, 2)
+a <- c(6, 4, 2, 1, 2, 3)
+prior_tbl <- 
+  data.frame(certainty = c("Sure they're different",
+                       "Not sure they're different",
+                       "I really have no idea, but I hope they're different",
+                       "I really have no idea, but I hope they're the same",
+                       "Not sure they're the same",
+                       "Sure they're the same"),
+         proportion = c(1/3, 1/3, 1/3, 2/3, 2/3, 2/3),
+         b_ratio = b_ratio,
+         a = a,
+         b = b_ratio * a)
+
+prior_ab <- function(prior_tbl, level) {
+  certainty_choice <- subset(prior_tbl, certainty == level)
+  out <- c(certainty_choice$a, certainty_choice$b)
+  out
 }
 
-report_txt <- function(N, X, confidence = 0.9) {
-  lims <- lims_fun(N, X)
+lims_fun <- function(N, X, a, b) {
+  qbeta(p = c(0.05, 0.95), shape1 = a + X, shape2 = b + N - X)
+}
+
+mode_fun <- function(N, X, a, b){
+  (a + X - 1) / (a + b + N - 2)
+}
+
+report_txt <- function(N, X, a, b, confidence = 0.9) {
+  lims <- lims_fun(N, X, a, b)
+  mode <- mode_fun(N, X, a, b)
   glue(
     "Based on your prior certainty about how different your samples were, ", 
     "and the fact that {X}/{N} of your tasters correctly completed the ",
-    "discrimination test, we estimate that in approximately ", 
-    "{round(confidence * 100, 0)}% of cases, a minimum of ", 
-    "{round(100*lims[1], 0)}% and a maximum of {round(100*lims[2], 0)}% ",
-    "of consumers would notice the difference between these two sample wines."
+    "discrimination test, we estimate with {round(confidence * 100, 0)}%  confidence that the probability ",  
+    "of there being a noticeable sensory difference in these two samples is ",
+    "between a minimum of {round(100*lims[1], 0)}% and a maximum of {round(100*lims[2], 0)}%, ",
+    "with the most likely probability being {round(100*mode, 0)}% of subjects noticing a difference. ",
+    "These probabilities are displayed below applied to a theoretical 100 tasters, ",
+    "to help illustrate the possible outcomes in real-world circumstances."
   )
 }
 
-report_plt <- function(N, X, confidence = 0.9) {
-  lims <- lims_fun(N, X)
+
+report_plt <- function(N, X, a, b, confidence = 0.9) {
+  lims <- lims_fun(N, X, a, b)
   
   data.frame(
     difference = c(rep("Noticed", 3), rep("Did not notice", 3)),
@@ -82,6 +110,78 @@ report_plt <- function(N, X, confidence = 0.9) {
           axis.ticks.length.x = unit(0, "cm"))
 }
 
+# Plot_beta_binomial is from bayesrules package
+# https://github.com/bayes-rules/bayesrules/blob/master/R/plot_beta_binomial.R
+plot_beta_binomial <- function (alpha,
+                                beta,
+                                y = NULL,
+                                n = NULL,
+                                prior = TRUE,
+                                likelihood = TRUE,
+                                posterior = TRUE){
+  if (is.null(y) | is.null(n))
+    warning("To visualize the posterior,
+            specify data y and n")
+
+  g <- ggplot(data = data.frame(x = c(0, 1)), aes(x)) +
+    labs(x = expression(pi),
+         y = "density") +
+    scale_fill_manual("",
+                      values = c(prior = "#f0e442",
+                                 `(scaled) likelihood` = "#0071b2",
+                                 posterior = "#009e74"),
+                      breaks = c("prior",
+                                 "(scaled) likelihood",
+                                 "posterior"))
+  
+  if (prior == TRUE) {
+    g <- g +
+      stat_function(fun = dbeta,
+                           args = list(shape1 = alpha,
+                                       shape2 = beta)) +
+      stat_function(fun = dbeta,
+                    args = list(shape1 = alpha,
+                                shape2 = beta),
+                    geom = "area",
+                    alpha = 0.5,
+                    aes(fill = "prior"))
+    }
+
+  if (!is.null(y) & !is.null(n)) {
+    alpha_post <- alpha + y
+    beta_post <- beta + n - y
+    y_data <- y
+    like_scaled <- function(x) {
+      like_fun <- function(x) {
+        dbinom(x = y_data, size = n, prob = x)
+      }
+      scale_c <- integrate(like_fun, lower = 0, upper = 1)[[1]]
+      like_fun(x)/scale_c
+    }
+  }
+  if (!is.null(y) & !is.null(n) & (likelihood != FALSE)) {
+    g <- g +
+      stat_function(fun = like_scaled) +
+      stat_function(fun = like_scaled,
+                    geom = "area",
+                    alpha = 0.5,
+                    aes(fill = "(scaled) likelihood"))
+  }
+  if (!is.null(y) & !is.null(n) & posterior == TRUE) {
+    g <- g +
+      stat_function(fun = dbeta,
+                    args = list(shape1 = alpha_post,
+                                shape2 = beta_post)) +
+      stat_function(fun = dbeta,
+                    args = list(shape1 = alpha_post,
+                                shape2 = beta_post),
+                    geom = "area", alpha = 0.5,
+                    aes(fill = "posterior"))
+  }
+  g + 
+    theme_linedraw(base_size = 20)
+}
+
 ### UI code ###
 
 sidebar_selectors <- sidebar(
@@ -91,15 +191,23 @@ sidebar_selectors <- sidebar(
   numericInput("X",
                label = "Number of participants who thought they were different",
                value = 15, min = 0),
+  selectInput("prior", "Your expectation:",
+              choices = prior_tbl$certainty,
+              width = "100%"),
   actionButton("simulate", "Run test")
 )
 
 # Define UI for application that draws a histogram
 ui <- page_navbar(
   sidebar = sidebar_selectors,
+  navset_card_tab(
   nav_panel("Plot the outcome",
             textOutput("reportText"),
-            plotOutput("reportPlot"))
+            plotOutput("reportPlot")),
+  nav_panel("Distribution for priors",
+            textOutput("ab"),
+            plotOutput("bayesPlot"))
+  )
 )
 
 ### Server code ###
@@ -107,17 +215,28 @@ ui <- page_navbar(
 # Define server logic
 server <- function(input, output) {
   
+  priors <- reactive(prior_ab(prior_tbl, input$prior))
+  
   N <- eventReactive(input$simulate, input$N, ignoreNULL = FALSE)
   X <- eventReactive(input$simulate, input$X, ignoreNULL = FALSE)
   
   output$reportText <- renderText(
-    report_txt(N(), X())
+    report_txt(N(), X(), priors()[[1]], priors()[[2]])
   )
   
   output$reportPlot <- renderPlot(
-    report_plt(N(), X()),
-    height = 600
+   report_plt(N(), X(), priors()[[1]], priors()[[2]]),
+    height = 500
   )
+  
+  output$bayesPlot <- renderPlot({
+    plot_beta_binomial(alpha = priors()[[1]], beta = priors()[[2]],
+                       y = X(), n = N())
+  })
+  
+  output$ab <- renderText(
+    paste("Alpha is currently:", priors()[[1]], "and",
+          "Beta is currently:", priors()[[2]]))
 }
 
 # Run the application 
