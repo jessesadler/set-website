@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.25">
+<meta name="generator" content="quarto-1.8.27">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -37,7 +37,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-6aaf765234326b9121183c2329419527.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
@@ -85,8 +85,6 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    </a>
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Sensory Extension Toolkit</span>
     </a>
@@ -200,7 +198,8 @@ mode_fun &lt;- function(N, X, a, b){
 report_txt &lt;- function(N, X, a, b, confidence = 0.9) {
   lims &lt;- lims_fun(N, X, a, b)
   mode &lt;- mode_fun(N, X, a, b)
-  glue(
+  markdown(
+    glue(
     "Based on your prior certainty about how different your samples were, ", 
     "and the fact that {X}/{N} of your tasters correctly completed the ",
     "discrimination test, we estimate with {round(confidence * 100, 0)}%  confidence that the probability ",  
@@ -209,6 +208,7 @@ report_txt &lt;- function(N, X, a, b, confidence = 0.9) {
     "with the most likely probability being **{round(100*mode, 0)}% of subjects noticing a difference**. ",
     "These probabilities are displayed below applied to a hypothetical 100 tasters, ",
     "to help illustrate the possible outcomes in real-world circumstances."
+  )
   )
 }
 
@@ -343,7 +343,7 @@ ui &lt;- page_navbar(
   sidebar = sidebar_selectors,
   navset_card_tab(
   nav_panel("Plot the outcome",
-            textOutput("reportText"),
+            htmlOutput("reportText"),
             plotOutput("reportPlot")),
   nav_panel("Distribution for priors",
             textOutput("ab"),
