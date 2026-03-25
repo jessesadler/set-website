@@ -18,3 +18,10 @@ Before we get to the analysis, a quick, intuitive explanation.  Above, we talked
 Intuitively, if $\pi$ is closer to $1$, then most people will notice a difference.  If $\pi$ is closer to $0$, then very few people will.  Behind the scenes, we're using $x/N$, combined with your prior estimate of how likely you think there is to be a *sensory* difference between A and B, to calculate a plausible range of $\pi$ values that could lead to that $x/N$.
 
 By giving some worst- and best-case outcomes, we'll tell you what you should expect to see, based on your prior intuition and your actual data, if you brought your products to market.
+
+## Further Reading
+
+To learn more about the statistical calculations we're making, we recommend [the linked chapter 3 from *Bayes Rules!*](https://www.bayesrulesbook.com/chapter-3), a handbook for Bayesian statistics.  The entire book is available online, making it a great resource for those outside academia:
+
+* Johnson, A. A., Ott, M. Q., & Dogucu, M. (2022). *Bayes rules!: An introduction to applied Bayesian modeling*. Chapman and Hall/CRC.
+

@@ -65,8 +65,8 @@ report_txt <- function(N, X, a, b, confidence = 0.9) {
     "discrimination test, we estimate with {round(confidence * 100, 0)}%  confidence that the probability ",  
     "of there being a noticeable sensory difference in these two samples is ",
     "between a minimum of {round(100*lims[1], 0)}% and a maximum of {round(100*lims[2], 0)}%, ",
-    "with the most likely probability being {round(100*mode, 0)}% of subjects noticing a difference. ",
-    "These probabilities are displayed below applied to a theoretical 100 tasters, ",
+    "with the most likely probability being **{round(100*mode, 0)}% of subjects noticing a difference**. ",
+    "These probabilities are displayed below applied to a hypothetical 100 tasters, ",
     "to help illustrate the possible outcomes in real-world circumstances."
   )
 }
