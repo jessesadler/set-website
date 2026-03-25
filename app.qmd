@@ -217,7 +217,9 @@ ui <- page_navbar(
 # Define server logic
 server <- function(input, output) {
   
-  priors <- reactive(prior_ab(prior_tbl, input$prior))
+  priors <- eventReactive(input$simulate,
+                          prior_ab(prior_tbl, input$prior),
+                          ignoreNULL = FALSE)
   
   N <- eventReactive(input$simulate, input$N, ignoreNULL = FALSE)
   X <- eventReactive(input$simulate, input$X, ignoreNULL = FALSE)
