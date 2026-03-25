@@ -356,7 +356,9 @@ ui &lt;- page_navbar(
 # Define server logic
 server &lt;- function(input, output) {
   
-  priors &lt;- reactive(prior_ab(prior_tbl, input$prior))
+  priors &lt;- eventReactive(input$simulate,
+                          prior_ab(prior_tbl, input$prior),
+                          ignoreNULL = FALSE)
   
   N &lt;- eventReactive(input$simulate, input$N, ignoreNULL = FALSE)
   X &lt;- eventReactive(input$simulate, input$X, ignoreNULL = FALSE)
