@@ -11,6 +11,16 @@ To use this part of the toolkit, you will need the results of your tetrad test. 
 
 Once you've got those, we're ready to get analyzing!
 
+## Prior intuitions and expectations
+
+Why do we care about your prior intuitions?  Why do you need to write them down?  In this analysis, we use your expertise, in the form of your **prior expectations**, to improve our statistical analysis.  Simply put, your past observations on experiments--formal or informal--are valuable information, and we're not going to just throw them away.  
+
+The reason we ask you to write down your expectations before you run the test is to separate what you knew before the sensory test from what you learned afterwards.  It's impossible for us to not try to make sense of new knowledge--that's basic reasoning!--so once we run the experiment, we update our prior knowledge with what we just learned.  Therefore, for this analysis, it's important to write down what we thought would happen before we run the test.  We recommend you just write a simple statement down in your lab notebook, indicating whether you think you'll find a difference or not, and whether you're sure or just leaning slightly in that direction.
+
+You might also be thinking that using your expectations will bias the outcome of our experiment.  But, actually, insisting that you can't use your prior knowledge is also biasing.  Without getting into a philosophical argument (you can read a book [like this one](https://bookshop.org/p/books/bernoulli-s-fallacy-statistical-illogic-and-the-crisis-of-modern-science-aubrey-clayton/) for that), think about a typical "null hypothesis" for our Merlot-blending example: in this case, a null hypothesis would be that there is literally zero effect on the flavor, color, aroma, or mouthfeel of your wine from adding a barrel of Merlot to our blend.  In reality, these null hypotheses are never true: different things are different.  
+
+We can assign numerical estimates to our informed opinons--our **expectations**--and you can see a visualization of the choices we've made for this project in the [data analysis tool outputs](app.qmd).
+
 ## What you'll get from this data analysis
 
 Before we get to the analysis, a quick, intuitive explanation.  Above, we talked about two important numbers: $x$ and $N$.  In fact, the proportion of correct answers, $x/N$ is the key quantity we're interested in here.  Specifically, we're interested in what insight $x/N$ gives us into the plausible proportion of people noticing a difference in your two products, A and B, which we'll call $\pi$ ($\pi=p=$ proportion).  Because $\pi$ is a proportion $0≤\pi≤1$, but we will present results in terms of both $\pi$ and in terms of the number of people in 100 who would notice a difference.

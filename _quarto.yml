@@ -8,9 +8,11 @@ website:
   navbar:
     left:
       - href: index.qmd
-        text: Home
-      - href: tetrad.qmd
-        text: "Recommended test procedure"
+        text: "Start here"
+      - href: discrimination.qmd
+        text: "Discrimination tests"
+      - href: tetrad-details.qmd
+        text: "Recommended procedure"
       - href: analysis.qmd
         text: "Data analysis"
       - href: app.qmd

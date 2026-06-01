@@ -1,0 +1,48 @@
+---
+title: "The 'tetrad' test"
+format: html
+---
+
+As previewed in our [general discussion of discrimination tests](discrimination.qmd), we recommend that you use the **tetrad test** as your all-purpose discrimination test.  
+
+![A ballot for the tetrad test.](img/tetrad-ballot-PLACEHOLDER.jpg){width=75%}
+
+The schematic ballot above is an idea of what one of your test subjects would be presented with in a tetrad test.
+
+The test is called the "tetrad" test specifically because it involves presenting each panelist with **four**, anonymized samples: two of sample A and two of sample B. The panelist must then correctly group the two A and two B samples together.
+
+## Files for download {#files}
+
+Below, we discuss how to conduct a tetrad test in general.  We also have designed a general walkthrough, a prep-sheet, and a score sheet that you can download here to help facilitate running your test.
+
+- **General steps/walkthrough for tetrad tests**: [download here](files/tetrad-steps.pdf)
+- **Prep/setup sheet**: [download here](files/tetrad-test-setup.pdf)
+- **Score/ballot sheet**: [download here](files/tetrad-test-ballot.pdf)
+- **Common errors in labeling**: [download here](files/cup-labeling.pdf)
+
+### The specific procedure for the tetrad test {#specific-procedures}
+
+1.  Note--before you start!--whether you expect the subjects to notice a difference or not, and how certain you are. This can be subjective (in fact it has to be) but it is important to write this down before you gather results. It tells you something about your impression of how big a change you're expecting to see, and will be used to calculate your results.  Our [test setup sheet](files/tetrad-test-setup.pdf) example has a space for this to help remind you to do so.
+1.	Prepare worksheets/scoresheets before the test. The worksheets should ask assessors to group the four samples into two groups of two based on similarity.  You can make your own or use the [examples we've provided](files/tetrad-test-ballot.pdf).
+2.	Make sure each sample is served in the same amount (e.g., 20-30mL), in the same kind of container, and at the same temperature. Each of the four samples should be labeled individually and anonymously, (e.g., with 3-digit codes, such as "123" for the first A, "334" for the second A, and so on). Don't create differences between your samples unintentionally, [for example by using two different colored markers for A and B samples](#badexample). We describe some more mistakes to avoid in a [labeling primer available here](files/cup-labeling.pdf). 
+3.  Present all 4 samples to a subject at the same time, in a randomized sequence. That way, not all panelists will taste wine/cider/beer A first, which might bias the results.  Details on serving order are available in our [setup sheet](files/tetrad-test-ballot.pdf), as well as in this helpful "mistakes to avoid" primer.
+3.	Instruct assessors to taste the samples in the order presented.
+5.	In this test, assessors must make a choice. Answers such as “no difference” or “all samples are different” are not acceptable. Assessors who reported any of those answers should be instructed to group the samples into two pairs randomly. The assessors can write that the selection was only a guess in the comment section of the scoresheet (although this information will not be used further, it helps the assessors make their selection).
+5.  Compile the results into a single notebook/report. The key elements to record are:
+    1.  The identity of the samples tested.
+    2.  The number of subjects who got it right: how many subjects got AA and BB together?
+    3.  The total number of subjects who participated.
+    4.  Your prior hypothesis, which you recorded before you started.
+    
+### A few other notes on the procedure:
+
+*  **Do not ask questions about preference/liking/how different the samples are** after the initial sample grouping. These are different cognitive tasks than simply evaluating "is there a difference" and can bias the results.
+*  **Each scoresheet should be only for evaluating one group of samples** (testing 2 products only). If you want to compare multiple sets of products, you need to use multiple sheets (and, in reality, set up multiple tests.)
+
+If you want to learn more about the tetrad test, you might find the following [technical presentation on tetrad testing](https://www.sensorysociety.org/meetings/2012%20Abstracts/SSP2012_Ennis_et_al_Tetrad_Workshop_2a.pdf) interesting.
+
+## Summary
+
+On this page, you learned how to set up and conduct a tetrad test. The key elements here are the [files you can download](#files) for reference and use, and the [instructions for setting up and collecting the important data](#specific-procedures) you'll need for the next page: the number of subjects, the number of subjects *who got the right answer*, and your prior hypotheses.
+
+Review this page and, when you're ready, conduct your test. Then, go to the next page to analyze your results.
