@@ -22,7 +22,7 @@ Below, we discuss how to conduct a tetrad test in general.  We also have designe
 
 ### The specific procedure for the tetrad test {#specific-procedures}
 
-1.  Note--before you start!--whether you expect the subjects to notice a difference or not, and how certain you are. This can be subjective (in fact it has to be) but it is important to write this down before you gather results. It tells you something about your impression of how big a change you're expecting to see, and will be used to calculate your results.  Our [test setup sheet](files/tetrad-test-setup.pdf) example has a space for this to help remind you to do so.
+1.  Note---before you start!---whether you expect the subjects to notice a difference or not, and how certain you are. This can be subjective (in fact it has to be) but it is important to write this down before you gather results. It tells you something about your impression of how big a change you're expecting to see, and will be used to calculate your results.  Our [test setup sheet](files/tetrad-test-setup.pdf) example has a space for this to help remind you to do so.
 1.	Prepare worksheets/scoresheets before the test. The worksheets should ask assessors to group the four samples into two groups of two based on similarity.  You can make your own or use the [examples we've provided](files/tetrad-test-ballot.pdf).
 2.	Make sure each sample is served in the same amount (e.g., 20-30mL), in the same kind of container, and at the same temperature. Each of the four samples should be labeled individually and anonymously, (e.g., with 3-digit codes, such as "123" for the first A, "334" for the second A, and so on). Don't create differences between your samples unintentionally, [for example by using two different colored markers for A and B samples](#badexample). We describe some more mistakes to avoid in a [labeling primer available here](files/cup-labeling.pdf). 
 3.  Present all 4 samples to a subject at the same time, in a randomized sequence. That way, not all panelists will taste wine/cider/beer A first, which might bias the results.  Details on serving order are available in our [setup sheet](files/tetrad-test-ballot.pdf), as well as in this helpful "mistakes to avoid" primer.
@@ -45,4 +45,4 @@ If you want to learn more about the tetrad test, you might find the following [t
 
 On this page, you learned how to set up and conduct a tetrad test. The key elements here are the [files you can download](#files) for reference and use, and the [instructions for setting up and collecting the important data](#specific-procedures) you'll need for the next page: the number of subjects, the number of subjects *who got the right answer*, and your prior hypotheses.
 
-Review this page and, when you're ready, conduct your test. Then, go to the next page to analyze your results.
+Review this page and, when you're ready, conduct your test. Then, go to the [next page](analysis.qmd) to analyze your results.
