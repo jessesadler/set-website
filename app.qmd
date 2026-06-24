@@ -6,8 +6,6 @@ format:
       body-width: 1350px
       sidebar-width: 200px
       margin-width: 200px
-    resources: 
-      - shinylive-sw.js
 filters:
   - shinylive
 ---

@@ -1,7 +1,5 @@
 project:
   type: website
-  resources:
-  - shinylive-sw.js
 
 website:
   title: "Sensory Extension Toolkit"
