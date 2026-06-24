@@ -1,36 +1,36 @@
 [
   {
-    "objectID": "tetrad.html",
-    "href": "tetrad.html",
-    "title": "Recommended test procedure: The ‘tetrad’ test",
+    "objectID": "discrimination.html",
+    "href": "discrimination.html",
+    "title": "Discrimination testing",
     "section": "",
-    "text": "So far, we’ve talked about what you can do with a general discrimination test. In fact, there are many specific discrimination tests, all of which involve testing a similar, basic question:\nNotice that we write “panelists” above: a key principle of sensory testing is that no one person, no matter how well-trained or expert, is accurate all the time or for every product. Therefore, we use a group of subjects to conduct a sensory test, and we use statistics to determine the strength of the results we observed–to update our understanding of the differences (or not!) between the products. This helps avoid drawing wrong conclusions just because someone had an off day or got very lucky."
+    "text": "So far, we’ve talked about what you can do with a general discrimination test. In fact, there are many specific discrimination tests, all of which involve testing a similar, basic question:\nNotice that we write “panelists” above: a key principle of sensory testing is that no one person, no matter how well-trained or expert, is accurate all the time or for every product. Just because one person notices a difference between samples doesn’t mean that everyone (or even most people) will, or that the same person will notice the difference every time.\nTherefore, we use a group of subjects to conduct a sensory test, and we use statistics to try to generalize from the results—to update our understanding of the differences (or not!) between the products. This helps avoid drawing wrong conclusions just because someone had an off day or got very lucky."
   },
   {
-    "objectID": "tetrad.html#general-procedure-for-conducting-a-discrimination-test",
-    "href": "tetrad.html#general-procedure-for-conducting-a-discrimination-test",
-    "title": "Recommended test procedure: The ‘tetrad’ test",
+    "objectID": "discrimination.html#production-goals",
+    "href": "discrimination.html#production-goals",
+    "title": "Discrimination testing",
+    "section": "Production goals",
+    "text": "Production goals\nTo tie the abstract discussion above to a concrete production goal, imagine that you’re a winemaker, and this year you have an extra barrel of merlot this season that you’d love to be able to use in your Bordeaux blend, but you’re not sure if the subsequent change in ratios—maybe closer to 45% instead of 35% merlot—would cause a major overall sensory change. You can use a discrimination test on bench blends to determine whether, on average, tasters will notice the difference in blends when tasted blind."
+  },
+  {
+    "objectID": "discrimination.html#general-procedure-for-conducting-a-discrimination-test",
+    "href": "discrimination.html#general-procedure-for-conducting-a-discrimination-test",
+    "title": "Discrimination testing",
     "section": "General procedure for conducting a discrimination test",
-    "text": "General procedure for conducting a discrimination test\nIn general, a discrimination test requires the following:\n\nDefinition of the test objective: what difference are you trying to quantify? Ask yourself how sure you are that a difference between the samples will be found. Examining our prior beliefs helps us calibrate the test.\nSample preparation: anonymize samples and prepare to present them in a consistent fashion\nPanelist recruitment: typically we need at least 20 subjects to participate, and more than 40 is preferred. In addition, it is usually a good idea to have panelists who do not all work in the winery or cidery–experience leads to expertise with the product.\nThe test(!): present the samples in the appropriate fashion (see below for a specific, recommended method), which will involve “anonymizing” samples (masking their identity in a way you can keep track of), and collecting responses in a “ballot”.\nAnalyze the data: use appropriate statistics (or a toolkit like this one!) to determine what the combination of your prior hypothesis and your observed data tells you about the actual range of possible difference between the two samples.\nMake interpretations: based on the observed results and subsequent statistical output (which typically gives a range of compatible true probabilities of discrimination), determine the risk of accepting that the samples are or are not different."
+    "text": "General procedure for conducting a discrimination test\n\n\n\nPresentation of samples for a tetrad test on cider samples. This picture presents a key cautionary example: don’t give your panelists extra clues about the different sample: here two samples are implied to be the same.1\n\n\nIn general, a discrimination test requires the following:\n\nDefinition of the test objective: what difference are you trying to quantify? Ask yourself how sure you are that a difference between the samples will be found. Examining our prior beliefs helps us calibrate the test.\nSample preparation: anonymize samples and prepare to present them in a consistent fashion\nPanelist recruitment: typically we want at least 20 subjects to participate, and closer to 40 is preferred. In addition, it is usually a good idea to have panelists who do not all work in the winery or cidery—experience leads to expertise with the product.\nThe test(!): present the samples in the appropriate fashion (see below and next tab for a specific, recommended method), which will involve “anonymizing” samples (masking their identity in a way you can keep track of), and collecting responses in a “ballot”.\nAnalyze the data: use appropriate statistics (or a toolkit like this one!) to determine what the combination of your prior hypothesis and your observed data tells you about the actual range of possible difference between the two samples.\nMake interpretations: based on the observed results and subsequent statistical output (which typically gives a range of compatible true probabilities of discrimination), determine the risk of accepting that the samples are or are not different."
   },
   {
-    "objectID": "tetrad.html#the-tetrad-test-our-recommended-discrimination-test",
-    "href": "tetrad.html#the-tetrad-test-our-recommended-discrimination-test",
-    "title": "Recommended test procedure: The ‘tetrad’ test",
+    "objectID": "discrimination.html#the-tetrad-test-our-recommended-discrimination-test",
+    "href": "discrimination.html#the-tetrad-test-our-recommended-discrimination-test",
+    "title": "Discrimination testing",
     "section": "The “tetrad” test: Our recommended discrimination test",
-    "text": "The “tetrad” test: Our recommended discrimination test\nThere are many test procedures that follow the basic steps above, but rather than debate specific use cases or advantages, we are going to simply recommend that wineries and cideries use the tetrad test procedure. For reasons that are beyond the scope of this toolkit, the tetrad test is more powerful than comparable tests, and has the advantage of being easy to set up and to present to panelists. We think this makes it ideal for use in a winery or cidery environment\n\n\n\nA placeholder example of a ballot for a tetrad test.\n\n\nThe test is called the “tetrad” test specifically because it involves presenting each panelist with four, anonymized samples: two of sample A and two of sample B. The panelist must then correctly group the two A and two B samples together.\n\nThe specific procedure for the tetrad test\n\nWrite down–before you start!–whether you expect the subjects to notice a difference or not, and how certain you are. This can be subjective (in fact it has to be) but it is important to write this down before you gather results. It tells you something about your impression of how big a change you’re expecting to see, and will be used to calculate your results.\nPrepare worksheets/scoresheets before the test. The worksheets should ask assessors to group the four samples into two groups of two based on similarity.\nMake sure each sample is served in the same amount (e.g., 20-30mL), in the same kind of container, and at the same temperature. Each of the four samples should be labeled individually and anonymously, (e.g., with 3-digit codes, such as “123” for the first A, “334” for the second A, and so on). Don’t create differences between your samples unintentionally, say by using two different colored markers for A and B samples.\n\nPresent all 4 samples to a subject at the same time, in a randomized sequence. That way, not all panelists will taste the first A first, which might bias the results.\nUse an equal number of the six possible sequences of the two products (A and B):\nAABB / ABAB / BBAA / BABA / ABBA / BAAB\nDistribute these at random among assessors to achieve a balanced serving order.\nInstruct assessors to taste the samples in the order presented.\nIn this test, assessors must make a choice. Answers such as “no difference” or “all samples are different” are not acceptable. Assessors who reported any of those answers should be instructed to group the samples into two pairs randomly. The assessors can write that the selection was only a guess in the comment section of the scoresheet (although this information will not be used further, it helps the assessors make their selection).\nCompile the results into a single notebook/report. The key elements to record are:\n\nThe identity of the samples tested.\nThe number of subjects who got it right: how many subjects got AA and BB together?\nThe total number of subjects who participated.\nYour prior hypothesis, which you recorded before you started.\n\n\n\n\nA few other notes on the procedure:\n\nDo not ask questions about preference/liking/how different the samples are after the initial sample grouping. These are different cognitive tasks than simply evaluating “is there a difference” and can bias the results.\nEach scoresheet should be only for evaluating one group of samples (testing 2 products only). If you want to compare multiple sets of products, you need to use multiple sheets (and, in reality, set up multiple tests.)\n\nIf you want to know more about the tetrad test, we recommend the following technical presentation on tetrad testing."
+    "text": "The “tetrad” test: Our recommended discrimination test\nThere are many test procedures that follow the basic steps above, but rather than debate specific use cases or advantages, we are going to simply recommend that wineries and cideries use the tetrad test procedure. For reasons that are beyond the scope of this toolkit, the tetrad test is more powerful than comparable tests, and has the advantage of being easy to set up and to present to panelists. We think this makes it ideal for use in a winery or cidery environment\nTo learn about the tetrad test, please go on to the next tab, where we’ll go into detail."
   },
   {
-    "objectID": "tetrad.html#summary",
-    "href": "tetrad.html#summary",
-    "title": "Recommended test procedure: The ‘tetrad’ test",
-    "section": "Summary",
-    "text": "Summary\nOn this page, you learned how to set up and conduct a tetrad test. The key element here is the instructions for setting up and collecting the important data you’ll need for the next page: the number of subjects, the number of subjects who got the right answer, and your prior hypotheses.\nReview this page and, when you’re ready, conduct your test. Then, go to the next page to analyze your results."
-  },
-  {
-    "objectID": "tetrad.html#footnotes",
-    "href": "tetrad.html#footnotes",
-    "title": "Recommended test procedure: The ‘tetrad’ test",
+    "objectID": "discrimination.html#footnotes",
+    "href": "discrimination.html#footnotes",
+    "title": "Discrimination testing",
     "section": "Footnotes",
     "text": "Footnotes\n\n\nNotice the different colors of ink!↩︎"
   },
@@ -60,28 +60,35 @@
     "href": "index.html",
     "title": "So you want to run a sensory test",
     "section": "",
-    "text": "What is “sensory testing” (also called “sensory evaluation”)? This means getting people’s reaction to a food product in terms of how it tastes, smells, looks, feels, and/or sounds, and then using this information to make data-informed decisions. We want to help provide wine- and cider-makers in Virginia, like you, with this free toolkit–a step-by-step guide to teach you how to use it.\nIn this interactive toolkit, we explain how to design, run, analyze, and use the results from a specific type of sensory test: “discrimination testing”, which allows you to determine whether processing or ingredient changes will lead to noticeable changes in your product.\nYou’ll notice 3 of tabs in this toolkit–if you follow through each of them, you’ll learn how to design a test, how to collect data, and how to analyze the data using this toolkit. If you’re already familiar with these kinds of tests, and you just want to analyze data you’ve already collected, you can skip right to the “discrimination test analysis” tab above or by clicking here.\nThis toolkit was designed and supported through funding from the Virginia Tech College of Agricultural and Life Sciences 2024 Seed Grant Program “Determining and meeting the sensory evaluation needs of VA wine and cider makers”. In a survey conducted of Virginia wine- and cider-makers in late 2025/early 2026 (IRB 25-788), as part of this funding, respondents indicated that discrimination testing was one of their top needs, and this toolkit is meant to address those needs."
-  },
-  {
-    "objectID": "index.html#why-conduct-a-sensory-test-at-all",
-    "href": "index.html#why-conduct-a-sensory-test-at-all",
-    "title": "So you want to run a sensory test",
-    "section": "Why conduct a sensory test at all?",
-    "text": "Why conduct a sensory test at all?\nAs someone who works in the wine or cider industry, it’s likely that you frequently change raw materials–source apples or grapes from different plots–or processing equipment–perhaps changing your pressing equipment, or scaling up to larger fermenter batches. These are all real differences–something is different. But the question is whether these changes lead to noticeable sensory differences in the product.\n(Oh, you might say, we know there is a difference in ºBrix or volatile acidity… but depending on the product, measurable chemical or physical differences don’t always result in sensory differences that consumers notice. We use sensory evaluation to bring in “human instruments” to determine whether known differences in some process, ingredient, or parameter lead to these noticeable sensory differences.)"
+    "text": "What is “sensory testing” (also called “sensory evaluation”)? Why would a winery, cidery, or brewery want the capacity to run these tests?\nSensory testing means using a controlled test to get people’s reaction to a food product in terms of how it tastes, smells, looks, feels, and/or sounds, and then using this information to make data-informed decisions."
   },
   {
     "objectID": "index.html#the-categories-of-sensory-evalaluation",
     "href": "index.html#the-categories-of-sensory-evalaluation",
     "title": "So you want to run a sensory test",
     "section": "The categories of sensory evalaluation",
-    "text": "The categories of sensory evalaluation\nTypically, there are three basic questions/goals of sensory tests:\n\nDiscrimination ⬅️ what this toolkit will cover\nIn discrimination testing, we test whether processing or ingredient differences lead to a noticeable difference.\nDescriptive\nIn descriptive testing (often called Descriptive Analysis), we quantify the differences among products that we know are different.\nAffective\nIn affective testing, we test larger groups of consumers to see how they respond–positively, negatively?–to products we know are different."
+    "text": "The categories of sensory evalaluation\nTypically, there are three basic questions/goals of sensory tests:\n\nDiscrimination ⬅️ what this toolkit will cover\nIn discrimination testing, we test whether processing or ingredient differences lead to a noticeable difference.\nDescriptive\nIn descriptive testing (often called Descriptive Analysis), we quantify the differences among products that we know are different.\nAffective\nIn affective testing, we test larger groups of consumers to see how they respond—positively, negatively?—to products we know are different.\n\n\n\n\nTwo participants taste wine in a sensory test"
   },
   {
-    "objectID": "index.html#production-goals",
-    "href": "index.html#production-goals",
+    "objectID": "index.html#sensory-testing-and-production-goals",
+    "href": "index.html#sensory-testing-and-production-goals",
     "title": "So you want to run a sensory test",
-    "section": "Production goals",
-    "text": "Production goals\nThe categories above are very basic types of research questions: is there a difference? What kind? How do people feel about it?\nIn the real world, these research questions are applied more specifically. For example, we might want to determine whether people notice a change in grape blends (is a change from 45/55 to 50/50 Merlot/Cabernet Sauvignon noticeable?) or to determine whether a batch of cider that took longer to ferment than usual is noticeably different from the brand standard. Perhaps you want to be able to sell your product in both glass 750 mL bottles and 16-oz aluminum cans: will the same product taste different after a month stored in each of these containers? These goals can be addressed using discrimination testing.\nClick the next tab to learn how to conduct a simple and flexible discrimination test–the “tetrad test”."
+    "section": "Sensory testing and production goals",
+    "text": "Sensory testing and production goals\nThe categories above are very basic types of research questions: is there a difference? What kind? How do people feel about it?\nIn the real world, these research questions are applied more specifically. For example, we might want to determine whether people notice a change in grape blends (is adding an extra barrel of merlot to your Bordeaux blend going to change the overall sensory characteristics?) or to determine whether a batch of cider that took longer to ferment than usual is noticeably different from the brand standard. Perhaps you want to be able to sell your product in both glass 750 mL bottles and 16-oz aluminum cans: will the same product taste different after a month stored in each of these containers? These goals can be addressed using discrimination testing.\nWe want to help provide wine- and cider-makers in Virginia, like you, with this free toolkit—a step-by-step guide to teach you how to use it."
+  },
+  {
+    "objectID": "index.html#why-conduct-a-sensory-test-at-all",
+    "href": "index.html#why-conduct-a-sensory-test-at-all",
+    "title": "So you want to run a sensory test",
+    "section": "Why conduct a sensory test at all?",
+    "text": "Why conduct a sensory test at all?\nAs someone who works in the wine or cider industry, it’s likely that you frequently change raw materials—source apples or grapes from different plots, use different blending ratios—or processing equipment—perhaps changing your pressing equipment, or scaling up to larger fermenter batches. These are all real differences—something is different. But the question is whether these changes lead to noticeable sensory differences for the average consumer in the product.\n(“Oh,” you might say, “we know there is a difference in ºBrix or volatile acidity…” but depending on the product, measurable chemical or physical differences don’t always result in sensory differences that consumers notice. We use sensory evaluation to bring in “human instruments” to determine whether known differences in some process, ingredient, or parameter lead to these noticeable sensory differences.)"
+  },
+  {
+    "objectID": "index.html#what-youll-get-in-this-toolkit",
+    "href": "index.html#what-youll-get-in-this-toolkit",
+    "title": "So you want to run a sensory test",
+    "section": "What you’ll get in this toolkit",
+    "text": "What you’ll get in this toolkit\nIn this interactive toolkit, we explain how to design, run, analyze, and use the results from a specific type of sensory test: “discrimination testing”, which allows you to determine whether processing or ingredient changes will lead to noticeable changes in your product.\nYou’ll notice XX of tabs in this toolkit—if you follow through each of them, you’ll learn how to design a test, how to collect data, and how to analyze the data using this toolkit. If you’re already familiar with these kinds of tests, and you just want to analyze data you’ve already collected, you can skip right to the “discrimination test analysis” tab above or by clicking here.\nThis toolkit was designed and supported through funding from the Virginia Tech College of Agricultural and Life Sciences 2024 Seed Grant Program “Determining and meeting the sensory evaluation needs of VA wine and cider makers”. In a survey conducted of Virginia wine- and cider-makers in late 2025/early 2026 (IRB 25-788), as part of this funding, respondents indicated that discrimination testing was one of their top needs, and this toolkit is meant to address those needs.\nClick the next tab to learn how to conduct a simple and flexible discrimination test—the “tetrad test”."
   },
   {
     "objectID": "index.html#further-reading",
@@ -89,6 +96,27 @@
     "title": "So you want to run a sensory test",
     "section": "Further Reading",
     "text": "Further Reading\nTo learn more about sensory evaluation in general, we recommend the following resources (which are online or can be acquired affordably on the secondary market):\n\nLawless, H. T., & Heymann, H. (2010). Sensory Evaluation of Food: Principles and Practices (Second). Springer.\nSociety of Sensory Professionals Knowledge Center"
+  },
+  {
+    "objectID": "tetrad-details.html",
+    "href": "tetrad-details.html",
+    "title": "The ‘tetrad’ test",
+    "section": "",
+    "text": "As previewed in our general discussion of discrimination tests, we recommend that you use the tetrad test as your all-purpose discrimination test.\nThe schematic ballot above is an idea of what one of your test subjects would be presented with in a tetrad test.\nThe test is called the “tetrad” test specifically because it involves presenting each panelist with four, anonymized samples: two of sample A and two of sample B. The panelist must then correctly group the two A and two B samples together."
+  },
+  {
+    "objectID": "tetrad-details.html#files",
+    "href": "tetrad-details.html#files",
+    "title": "The ‘tetrad’ test",
+    "section": "Files for download",
+    "text": "Files for download\nBelow, we discuss how to conduct a tetrad test in general. We also have designed a general walkthrough, a prep-sheet, and a score sheet that you can download here to help facilitate running your test.\n\nGeneral steps/walkthrough for tetrad tests: download here\nPrep/setup sheet: download here\nScore/ballot sheet: download here\nCommon errors in labeling: download here\n\n\nThe specific procedure for the tetrad test\n\nNote—before you start!—whether you expect the subjects to notice a difference or not, and how certain you are. This can be subjective (in fact it has to be) but it is important to write this down before you gather results. It tells you something about your impression of how big a change you’re expecting to see, and will be used to calculate your results. Our test setup sheet example has a space for this to help remind you to do so.\nPrepare worksheets/scoresheets before the test. The worksheets should ask assessors to group the four samples into two groups of two based on similarity. You can make your own or use the examples we’ve provided.\nMake sure each sample is served in the same amount (e.g., 20-30mL), in the same kind of container, and at the same temperature. Each of the four samples should be labeled individually and anonymously, (e.g., with 3-digit codes, such as “123” for the first A, “334” for the second A, and so on). Don’t create differences between your samples unintentionally, for example by using two different colored markers for A and B samples. We describe some more mistakes to avoid in a labeling primer available here.\nPresent all 4 samples to a subject at the same time, in a randomized sequence. That way, not all panelists will taste wine/cider/beer A first, which might bias the results. Details on serving order are available in our setup sheet, as well as in this helpful “mistakes to avoid” primer.\nInstruct assessors to taste the samples in the order presented.\nIn this test, assessors must make a choice. Answers such as “no difference” or “all samples are different” are not acceptable. Assessors who reported any of those answers should be instructed to group the samples into two pairs randomly. The assessors can write that the selection was only a guess in the comment section of the scoresheet (although this information will not be used further, it helps the assessors make their selection).\nCompile the results into a single notebook/report. The key elements to record are:\n\nThe identity of the samples tested.\nThe number of subjects who got it right: how many subjects got AA and BB together?\nThe total number of subjects who participated.\nYour prior hypothesis, which you recorded before you started.\n\n\n\n\nA few other notes on the procedure:\n\nDo not ask questions about preference/liking/how different the samples are after the initial sample grouping. These are different cognitive tasks than simply evaluating “is there a difference” and can bias the results.\nEach scoresheet should be only for evaluating one group of samples (testing 2 products only). If you want to compare multiple sets of products, you need to use multiple sheets (and, in reality, set up multiple tests.)\n\nIf you want to learn more about the tetrad test, you might find the following technical presentation on tetrad testing interesting."
+  },
+  {
+    "objectID": "tetrad-details.html#summary",
+    "href": "tetrad-details.html#summary",
+    "title": "The ‘tetrad’ test",
+    "section": "Summary",
+    "text": "Summary\nOn this page, you learned how to set up and conduct a tetrad test. The key elements here are the files you can download for reference and use, and the instructions for setting up and collecting the important data you’ll need for the next page: the number of subjects, the number of subjects who got the right answer, and your prior hypotheses.\nReview this page and, when you’re ready, conduct your test. Then, go to the next page to analyze your results."
   },
   {
     "objectID": "app.html",
@@ -103,6 +131,13 @@
     "title": "Data analysis for tetrad discrimination tests",
     "section": "",
     "text": "To use this part of the toolkit, you will need the results of your tetrad test. Specifically, you will need:\nOnce you’ve got those, we’re ready to get analyzing!"
+  },
+  {
+    "objectID": "analysis.html#prior-intuitions-and-expectations",
+    "href": "analysis.html#prior-intuitions-and-expectations",
+    "title": "Data analysis for tetrad discrimination tests",
+    "section": "Prior intuitions and expectations",
+    "text": "Prior intuitions and expectations\nWhy do we care about your prior intuitions? Why do you need to write them down? In this analysis, we use your expertise, in the form of your prior expectations, to improve our statistical analysis. Simply put, your past observations on experiments–formal or informal–are valuable information, and we’re not going to just throw them away.\nThe reason we ask you to write down your expectations before you run the test is to separate what you knew before the sensory test from what you learned afterwards. It’s impossible for us to not try to make sense of new knowledge–that’s basic reasoning!–so once we run the experiment, we update our prior knowledge with what we just learned. Therefore, for this analysis, it’s important to write down what we thought would happen before we run the test. We recommend you just write a simple statement down in your lab notebook, indicating whether you think you’ll find a difference or not, and whether you’re sure or just leaning slightly in that direction.\nYou might also be thinking that using your expectations will bias the outcome of our experiment. But, actually, insisting that you can’t use your prior knowledge is also biasing. Without getting into a philosophical argument (you can read a book like this one for that), think about a typical “null hypothesis” for our Merlot-blending example: in this case, a null hypothesis would be that there is literally zero effect on the flavor, color, aroma, or mouthfeel of your wine from adding a barrel of Merlot to our blend. In reality, these null hypotheses are never true: different things are different.\nWe can assign numerical estimates to our informed opinons–our expectations–and you can see a visualization of the choices we’ve made for this project in the data analysis tool outputs."
   },
   {
     "objectID": "analysis.html#what-youll-get-from-this-data-analysis",

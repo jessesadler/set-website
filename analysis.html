@@ -2,13 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.27">
+<meta name="generator" content="quarto-1.9.38">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
 <title>Data analysis for tetrad discrimination tests – Sensory Extension Toolkit</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -32,15 +35,14 @@ ul.task-list li input[type="checkbox"] {
 <meta name="quarto:offset" content="./">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-5b4ad623e5705c0698d39aec6f10cf02.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-158031087360bce0ff56dc785ce39e06.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,7 +72,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -121,11 +123,15 @@ window.Quarto = {
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
     <a class="nav-link" href="./index.html"> 
-<span class="menu-text">Home</span></a>
+<span class="menu-text">Start here</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./tetrad.html"> 
-<span class="menu-text">Recommended test procedure</span></a>
+    <a class="nav-link" href="./discrimination.html"> 
+<span class="menu-text">Discrimination tests</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./tetrad-details.html"> 
+<span class="menu-text">Recommended procedure</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="./analysis.html" aria-current="page"> 
@@ -155,7 +161,8 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#what-youll-get-from-this-data-analysis" id="toc-what-youll-get-from-this-data-analysis" class="nav-link active" data-scroll-target="#what-youll-get-from-this-data-analysis">What you’ll get from this data analysis</a></li>
+  <li><a href="#prior-intuitions-and-expectations" id="toc-prior-intuitions-and-expectations" class="nav-link active" data-scroll-target="#prior-intuitions-and-expectations">Prior intuitions and expectations</a></li>
+  <li><a href="#what-youll-get-from-this-data-analysis" id="toc-what-youll-get-from-this-data-analysis" class="nav-link" data-scroll-target="#what-youll-get-from-this-data-analysis">What you’ll get from this data analysis</a></li>
   <li><a href="#further-reading" id="toc-further-reading" class="nav-link" data-scroll-target="#further-reading">Further Reading</a></li>
   </ul>
 </nav>
@@ -190,6 +197,13 @@ window.Quarto = {
 <li>The number of subjects <em>who got the right answer</em>, which we can call <span class="math inline">\(x\)</span>. By necessity, <span class="math inline">\(x≤N\)</span>.</li>
 </ul>
 <p>Once you’ve got those, we’re ready to get analyzing!</p>
+<section id="prior-intuitions-and-expectations" class="level2">
+<h2 class="anchored" data-anchor-id="prior-intuitions-and-expectations">Prior intuitions and expectations</h2>
+<p>Why do we care about your prior intuitions? Why do you need to write them down? In this analysis, we use your expertise, in the form of your <strong>prior expectations</strong>, to improve our statistical analysis. Simply put, your past observations on experiments–formal or informal–are valuable information, and we’re not going to just throw them away.</p>
+<p>The reason we ask you to write down your expectations before you run the test is to separate what you knew before the sensory test from what you learned afterwards. It’s impossible for us to not try to make sense of new knowledge–that’s basic reasoning!–so once we run the experiment, we update our prior knowledge with what we just learned. Therefore, for this analysis, it’s important to write down what we thought would happen before we run the test. We recommend you just write a simple statement down in your lab notebook, indicating whether you think you’ll find a difference or not, and whether you’re sure or just leaning slightly in that direction.</p>
+<p>You might also be thinking that using your expectations will bias the outcome of our experiment. But, actually, insisting that you can’t use your prior knowledge is also biasing. Without getting into a philosophical argument (you can read a book <a href="https://bookshop.org/p/books/bernoulli-s-fallacy-statistical-illogic-and-the-crisis-of-modern-science-aubrey-clayton/">like this one</a> for that), think about a typical “null hypothesis” for our Merlot-blending example: in this case, a null hypothesis would be that there is literally zero effect on the flavor, color, aroma, or mouthfeel of your wine from adding a barrel of Merlot to our blend. In reality, these null hypotheses are never true: different things are different.</p>
+<p>We can assign numerical estimates to our informed opinons–our <strong>expectations</strong>–and you can see a visualization of the choices we’ve made for this project in the <a href="./app.html">data analysis tool outputs</a>.</p>
+</section>
 <section id="what-youll-get-from-this-data-analysis" class="level2">
 <h2 class="anchored" data-anchor-id="what-youll-get-from-this-data-analysis">What you’ll get from this data analysis</h2>
 <p>Before we get to the analysis, a quick, intuitive explanation. Above, we talked about two important numbers: <span class="math inline">\(x\)</span> and <span class="math inline">\(N\)</span>. In fact, the proportion of correct answers, <span class="math inline">\(x/N\)</span> is the key quantity we’re interested in here. Specifically, we’re interested in what insight <span class="math inline">\(x/N\)</span> gives us into the plausible proportion of people noticing a difference in your two products, A and B, which we’ll call <span class="math inline">\(\pi\)</span> (<span class="math inline">\(\pi=p=\)</span> proportion). Because <span class="math inline">\(\pi\)</span> is a proportion <span class="math inline">\(0≤\pi≤1\)</span>, but we will present results in terms of both <span class="math inline">\(\pi\)</span> and in terms of the number of people in 100 who would notice a difference.</p>
